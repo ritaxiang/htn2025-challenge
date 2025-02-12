@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    /* General Compilation Settings */
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    /* Path Aliases (Fix Import Errors) */
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@/components/*": ["src/components/*"],
+      "@/pages/*": ["src/pages/*"],
+      "@/lib/*": ["src/lib/*"],
+      "@/api/*": ["src/api/*"],
+      "@/styles/*": ["src/styles/*"]
+    },
+
+    /* Output Settings (Unused but Ensures Correct Builds) */
+    "outDir": "./dist",
+    "rootDir": "./src"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}

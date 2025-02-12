@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+html {
+    font-family: 'Inter', sans-serif;
+    background-color: #fdf6e3; 
+  }
+  
+  body {
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    font-weight: bold;
+  }
+  
+  button {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input, button {
+    outline: none;
+  }
+
+  body {
+    cursor: url("/cursor.png") 16 16, auto;
+  }
