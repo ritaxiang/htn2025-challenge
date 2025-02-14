@@ -115,7 +115,7 @@ const Header = ({
         </button>
       </div>
 
-      {/* Mobile Dropdown Menu */}
+      {/* Mobile Dropdown Menu (responsive design) */}
       {menuOpen && (
         <div className="md:hidden flex flex-col items-center gap-4 mt-4 pb-4 border-t border-gray-300">
           {/* Social Icons */}
