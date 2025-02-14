@@ -2,7 +2,7 @@
 
 html {
     font-family: 'Inter', sans-serif;
-    background-color: #fdf6e3; 
+    /* background-color: #fdf6e3; */
   }
   
   body {
@@ -24,3 +24,57 @@ html {
   body {
     cursor: url("/cursor.png") 16 16, auto;
   }
+
+/* Smooth Animated Pastel Gradient */
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #fdf6e3, #f8f6dc, #fffde8, #fff4e2);
+    background-size: 400% 400%;
+    animation: pastelMove 30s infinite ease-in-out;
+  }
+  
+  /* Gradient Animation */
+  @keyframes pastelMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/assets/noise-effect.jpg"); /* Update this path */
+    opacity: 0.09; /*Adjust for subtlety*/
+    pointer-events: none;
+    animation: noiseMove 2s infinite steps(10);
+}
+
+.event-page {
+    background: url('../assets/background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+/* TV Noise Effect */
+/* section {
+    position: fixed;
+    top: -50px;
+    left: -50px;
+    width: calc(100% + 100px);
+    height: calc(100% + 100px);
+    background: repeating-linear-gradient(#111, #111 50%, white 50%, white);
+    background-size: 5px 5px;
+    filter: url(#noise);
+    opacity: 0.06;  /* Adjust for more or less visible noise */
+    /* pointer-events: none; */
+  /* } */ 
+  

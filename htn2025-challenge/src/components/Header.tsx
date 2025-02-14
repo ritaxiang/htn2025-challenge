@@ -12,7 +12,11 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { Menu, X } from "lucide-react"; // For mobile menu toggle
 
-const Header = ({ setIsModalOpen }: { setIsModalOpen: (open: boolean) => void }) => {
+const Header = ({
+  setIsModalOpen,
+}: {
+  setIsModalOpen: (open: boolean) => void;
+}) => {
   const isAuthenticated = localStorage.getItem("isAuthenticated") === "true";
   const [menuOpen, setMenuOpen] = useState(false); // Mobile menu toggle
 
@@ -22,9 +26,8 @@ const Header = ({ setIsModalOpen }: { setIsModalOpen: (open: boolean) => void })
   };
 
   return (
-    <header className="bg-[#fdf6e3] px-6 py-4">
+    <header className=" px-6 py-4">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
-        
         {/* Left: Logo */}
         <div className="flex items-center">
           <Link to="/">
@@ -36,22 +39,46 @@ const Header = ({ setIsModalOpen }: { setIsModalOpen: (open: boolean) => void })
         <div className="hidden md:flex items-center gap-6">
           {/* Social Media Icons */}
           <div className="flex gap-4 text-gray-700">
-            <a href="https://www.instagram.com/hackthenorth" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.instagram.com/hackthenorth"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faInstagram} size="lg" />
             </a>
-            <a href="https://x.com/hackthenorth" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://x.com/hackthenorth"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faXTwitter} size="lg" />
             </a>
-            <a href="https://www.facebook.com/hackthenorth/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.facebook.com/hackthenorth/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faFacebookF} size="lg" />
             </a>
-            <a href="https://www.linkedin.com/company/hack-the-north/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/company/hack-the-north/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faLinkedin} size="lg" />
             </a>
-            <a href="https://www.tiktok.com/@hackthenorth" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.tiktok.com/@hackthenorth"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faTiktok} size="lg" />
             </a>
-            <a href="https://hackthenorth.medium.com/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://hackthenorth.medium.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faMedium} size="lg" />
             </a>
           </div>
@@ -80,7 +107,10 @@ const Header = ({ setIsModalOpen }: { setIsModalOpen: (open: boolean) => void })
         </div>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden text-gray-700" onClick={() => setMenuOpen(!menuOpen)}>
+        <button
+          className="md:hidden text-gray-700"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
           {menuOpen ? <X size={30} /> : <Menu size={30} />}
         </button>
       </div>
@@ -90,22 +120,46 @@ const Header = ({ setIsModalOpen }: { setIsModalOpen: (open: boolean) => void })
         <div className="md:hidden flex flex-col items-center gap-4 mt-4 pb-4 border-t border-gray-300">
           {/* Social Icons */}
           <div className="flex gap-4 text-gray-700">
-            <a href="https://www.instagram.com/hackthenorth" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.instagram.com/hackthenorth"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faInstagram} size="lg" />
             </a>
-            <a href="https://x.com/hackthenorth" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://x.com/hackthenorth"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faXTwitter} size="lg" />
             </a>
-            <a href="https://www.facebook.com/hackthenorth/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.facebook.com/hackthenorth/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faFacebookF} size="lg" />
             </a>
-            <a href="https://www.linkedin.com/company/hack-the-north/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/company/hack-the-north/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faLinkedin} size="lg" />
             </a>
-            <a href="https://www.tiktok.com/@hackthenorth" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.tiktok.com/@hackthenorth"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faTiktok} size="lg" />
             </a>
-            <a href="https://hackthenorth.medium.com/" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://hackthenorth.medium.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon icon={faMedium} size="lg" />
             </a>
           </div>

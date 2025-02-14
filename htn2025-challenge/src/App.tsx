@@ -1,15 +1,18 @@
 import { Routes, Route } from "react-router-dom";
 import EventsPage from "./pages/EventsPage"; 
 import EventPage from "./pages/EventPage";
-import LoginPage from "./pages/LoginPage";
+import NoiseEffect from "./components/NoiseEffect";
+import "./styles/global.css";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<EventsPage />} />
-      <Route path="/event/:id" element={<EventPage />} />
-      <Route path="/login" element={<LoginPage />} />
-    </Routes>
+    <div className="relative min-h-screen">
+      <NoiseEffect /> {/* Ensures background noise effect is always applied */}
+      <Routes>
+        <Route path="/" element={<EventsPage />} />
+        <Route path="/event/:id" element={<EventPage />} />
+      </Routes>
+    </div>
   );
 }
 

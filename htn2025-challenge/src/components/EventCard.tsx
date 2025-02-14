@@ -18,11 +18,11 @@ const EventCard: React.FC<EventCardProps> = ({ event, isAuthenticated }) => {
   if (permission === "private" && !isAuthenticated) return null;
 
   return (
-    <div className="bg-[#FDF6E3] p-5 rounded-xl shadow-[6px_6px_0px_#C6B8E6] w-full max-w-sm min-h-[380px] flex flex-col justify-between border-2 border-black">
+    <div className="bg-[#FDF6E3] p-5 rounded-xl shadow-[8px_8px_0px_#b7a5df] w-full max-w-sm min-h-[380px] flex flex-col justify-between border-2 border-gray-700">
       {/* Speaker Badge */}
       {speakers.length > 0 && (
         <div className="flex items-center gap-2 mb-2">
-          <span className="w-8 h-8 bg-[#DED6E9] text-[#644A99] flex items-center justify-center rounded-full font-bold border-2 border-black">
+          <span className="w-8 h-8 bg-[#DED6E9] text-[#644A99] flex items-center justify-center rounded-full font-bold border-2 border-gray-600">
             {speakers[0].name.charAt(0)}
           </span>
           <p className="font-semibold text-gray-900 truncate w-full">Speaker: {speakers[0].name}</p>
@@ -30,7 +30,7 @@ const EventCard: React.FC<EventCardProps> = ({ event, isAuthenticated }) => {
       )}
 
       {/* Event Title */}
-      <h2 className="text-lg font-bold text-gray-900 h-[48px] overflow-hidden">{name}</h2>
+      <p className="text-lg font-bold text-gray-900 h-[48px] overflow-hidden">{name}</p>
 
       {/* Placeholder Image */}
       <div className="mt-3 w-full h-36 bg-[#DDD5EB] rounded-lg flex items-center justify-center border-2 border-black">
@@ -41,7 +41,6 @@ const EventCard: React.FC<EventCardProps> = ({ event, isAuthenticated }) => {
       <p className="text-gray-700 mt-2 text-sm">
         {formattedStartTime} - {formattedEndTime}
       </p>
-
       {/* View Button - Smaller & Styled */}
       <div className="mt-auto flex justify-center">
         <Link to={`/event/${id}`} className="relative inline-block">

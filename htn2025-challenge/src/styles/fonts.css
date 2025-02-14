@@ -1,11 +1,33 @@
 @font-face {
-    font-family: "Pixelify Sans";
-    src: url("../assets/fonts/PixelifySans-VariableFont_wght.ttf") format("truetype");
+  font-family: "Pixelify Sans";
+  src: url("../assets/fonts/PixelifySans-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+@font-face {
+  font-family: "Barriecito";
+  src: url("../assets/fonts/Barriecito-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Barriecito", sans-serif;
+}
+
+@font-face {
+    font-family: "Poppins Regular";
+    src: url("../assets/fonts/Poppins-Light.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
   }
-  
-  body {
-    font-family: "Pixelify Sans", sans-serif;
+
+h2 {
+    font-family: "Poppins Regular", sans-serif;
   }
-  
