@@ -1,3 +1,5 @@
+// Page for displaying the details of a single event
+
 import { useEffect, useState } from "react";
 import { useParams, Navigate, useNavigate } from "react-router-dom";
 import { fetchEventById } from "../api/events";
@@ -24,19 +26,20 @@ const EventPage = () => {
 
   return (
     <div className="min-h-screen bg-[url('/src/assets/background.jpeg')] bg-cover bg-no-repeat flex justify-center items-center p-6 relative">
-      {/* Back Button - Positioned at the top-left of the page */}
+      {/* Back Button */}
       <button
         onClick={() => navigate("/")}
-        className="absolute top-6 left-6 bg-[#f9f7ff] text-gray-900 px-6 py-2 rounded-full shadow-md hover:bg-[#dfd3f0] transition flex items-center gap-2 z-10"
+        className="absolute top-4 left-4 sm:top-6 sm:left-6 bg-[#f9f7ff] text-gray-900 px-3 py-1 sm:px-6 sm:py-2 rounded-full shadow-md hover:bg-[#dfd3f0] transition flex items-center gap-2 z-10"
       >
         <ArrowLeft size={18} />
       </button>
 
-      <div className="relative max-w-3xl w-full bg-[#fefcf5] shadow-lg rounded-lg overflow-hidden p-6">
+      {/* Event Box */}
+      <div className="relative w-full max-w-md sm:max-w-3xl bg-[#fefcf5] shadow-lg rounded-lg overflow-hidden p-4 sm:p-6">
         {/* Event Name */}
         <h1 className="text-4xl font-bold text-gray-900">{event.name}</h1>
 
-        {/* Event Information (Date, Time, Location) */}
+        {/* Event Information */}
         <div className="flex flex-wrap gap-4 mt-4 text-gray-700">
           <p className="flex items-center gap-2">
             <CalendarIcon size={18} />
@@ -59,7 +62,7 @@ const EventPage = () => {
         {/* Speaker Information */}
         {event.speakers.length > 0 && (
           <div className="mt-4">
-            <h3 className="text-lg font-semibold text-gray-800">Speakers:</h3>
+            <h3 className="text-lg font-semibold text-gray-800">Speaker:</h3>
             <div className="flex flex-wrap gap-2 mt-2">
               {event.speakers.map((speaker, index) => (
                 <div
@@ -76,7 +79,7 @@ const EventPage = () => {
           </div>
         )}
 
-        {/* Description with Poppins Font */}
+        {/* Description */}
         <h2 className="mt-6 text-gray-700 leading-relaxed">
           {event.description}
         </h2>

@@ -1,3 +1,5 @@
+// For getting events data from the API and displaying it on the page.
+
 import axios from "axios";
 import { TEvent } from "../types/events";
 

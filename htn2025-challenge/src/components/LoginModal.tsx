@@ -1,3 +1,5 @@
+// User login component
+
 import { useState } from "react";
 import { SquareXIcon, EyeIcon, EyeClosedIcon } from "raster-react";
 
@@ -26,7 +28,7 @@ const LoginModal = ({ onClose }: { onClose: () => void }) => {
           </button>
         </div>
 
-        {/* Login Form */}
+        {/* Login Box */}
         <div className="p-10 flex flex-col items-center">
           {/* Username Input */}
           <input
@@ -36,7 +38,7 @@ const LoginModal = ({ onClose }: { onClose: () => void }) => {
             onChange={(e) => setUsername(e.target.value)}
           />
 
-          {/* Password Input with Show/Hide Button */}
+          {/* Password Input */}
           <div className="w-3/5 relative">
             <input
               type={showPassword ? "text" : "password"}
