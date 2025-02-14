@@ -1,6 +1,6 @@
-# 🚀 Hackathon Event Hub
+# 🚀 HTN Challenge - Event Page
 
-Welcome to **Hackathon Event Hub**, a web application designed to display hackathon events for both hackers and the general public. This app allows users to browse upcoming events, view details, and log in to access exclusive hacker-only events. 
+Welcome to **HTN Event Hub**, a web application designed to display hackathon events for both hackers and the general public. This app allows users to browse upcoming events, view details, and log in to access exclusive hacker-only events. 
 
 ---
 
