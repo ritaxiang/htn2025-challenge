@@ -1,4 +1,4 @@
-# 🌎 HTN Challenge - Event Page
+# 🌎 HTN Challenge - Event Hub
 
 Welcome to **HTN Event Hub**, a web application designed to display hackathon events for both hackers and the general public. This app allows users to browse upcoming events, view details, and log in to access exclusive hacker-only events. 
 
@@ -50,7 +50,7 @@ Each event has its own **dedicated page**, displaying:
 ## 🚀 Getting Started
 ### 1️⃣ **Clone the Repository**
 ```bash
-git clone https://github.com/your-username/hackathon-event-hub.git
+git clone https://github.com/your-username/hackathon-event-hub.git](https://github.com/ritaxiang/htn2025-challenge.git
 cd hackathon-event-hub
 ```
 
