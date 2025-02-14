@@ -50,7 +50,7 @@ Each event has its own **dedicated page**, displaying:
 ## 🚀 Getting Started
 ### 1️⃣ **Clone the Repository**
 ```bash
-git clone https://github.com/your-username/hackathon-event-hub.git](https://github.com/ritaxiang/htn2025-challenge.git
+git clone https://github.com/ritaxiang/htn2025-challenge.git
 cd htn2025-challenge
 ```
 
