@@ -8,7 +8,8 @@ Welcome to **HTN Event Hub**, a web application designed to display hackathon ev
 Hackathon Global Inc.™ has been successfully running hackathons for the past **10 years**. This project serves as a tool for attendees to explore event details, including **workshops, activities, and tech talks**, and provides a login system to unlock **private events**.
 
 🔗 **Live Demo**: _https://htn-challenge.netlify.app/_ 
-📂 **Repository**: _[Add your GitHub repo link here]_  
+
+📂 **Repository**: _https://github.com/ritaxiang/htn2025-challenge_  
 
 ---
 
@@ -19,9 +20,8 @@ Hackathon Global Inc.™ has been successfully running hackathons for the past *
 - ✅ **Search Functionality** - Users can search for specific events  
 - ✅ **Login System** - Restricts access to private events (Username: `hacker`, Password: `htn2025`)  
 - ✅ **Related Events Navigation** - Users can explore other relevant events  
-- ✅ **Mobile Responsive & Accessible** - Works across all devices  
-- ✅ **Gradient Background with TV Noise Effect** - Aesthetic design matching the hackathon theme  
-
+- ✅ **Mobile Responsive & Accessible** - Works across all devices
+  
 ---
 
 ## 🛠 Tools Used
