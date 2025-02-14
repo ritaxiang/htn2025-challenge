@@ -51,7 +51,7 @@ Each event has its own **dedicated page**, displaying:
 ### 1️⃣ **Clone the Repository**
 ```bash
 git clone https://github.com/your-username/hackathon-event-hub.git](https://github.com/ritaxiang/htn2025-challenge.git
-cd hackathon-event-hub
+cd htn2025-challenge
 ```
 
 ### 2️⃣ **Install Dependencies**
